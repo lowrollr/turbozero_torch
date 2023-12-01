@@ -1,8 +1,6 @@
 
 
 ![alphazero turns the tide!](./misc/othello_game.gif) ![2048](./misc/2048.gif)
-
-📣 [JAX is coming](https://github.com/lowrollr/turbozero/discussions/4), see the [jax](https://github.com/lowrollr/turbozero/tree/jax) branch!
 # 🏁 TurboZero
 The TurboZero project contains vectorized, hardware-accelerated implementations of AlphaZero-esque algorithms, alongside vectorized implementations of single-player and multi-player environments. Basic training infrastructure is also included, which means models can be trained for supported environments straight out of the box. This project is similar to DeepMind's [mctx](https://github.com/deepmind/mctx), but as of now is more focused on model-based algorithms like AlphaZero rather than model-free implementations such as MuZero, and is written with PyTorch instead of JAX. Due to this focus, TurboZero includes additional features relavant to model-based algorithms, such as persisting MCTS subtrees. I hope to eventually expand this project and implemented hardware-accelerated adaptations of other RL algorithms, like *MuZero* and *Stochastic AlphaZero*. 
 
@@ -120,12 +118,7 @@ For more information on tournament coniguration, see the [Tournaments](https://g
 ```terminal
 python turbozero.py --mode=demo --config=./example_configs/othello_demo.yaml
 ```
-For more information on demo coniguration, see the [Demo](https://github.com/lowrollr/turbozero/wiki/Demo) wiki page.
-## Future Work
-Major future initiatives include:
-* porting to JAX to fall in line with the rest of the RL ecosystem
-* support 3rd-party JAX environments
-* ditch homemade metrics library for tensorboard
+For more information on demo coniguration, see the [Demo](https://github.com/lowrollr/turbozero/wiki/Demo) wiki page!
 
 ## Issues
 If you use this project and encounter an issue, error, or undesired behavior, please submit a [GitHub Issue](https://github.com/lowrollr/turbozero/issues) and I will do my best to resolve it as soon as I can. You may also contact me directly via `hello@jacob.land`.
